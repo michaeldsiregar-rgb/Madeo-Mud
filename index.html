@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADEO SHOP - Top Up Game & Vehicle OTR 2</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HERO HEADER -->
+    <header class="hero-header">
+        <div class="logo-container">
+            <div class="logo-circle-img">
+                <img src="https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/c79c0ed4-191e-4f52-a975-0cf1cd07696c.jpg" alt="Logo MADEO SHOP">
+            </div>
+            <div class="brand-text">
+                <h1>MADEO</h1>
+                <p class="tagline">OFFICIAL SHOP</p>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@frabex.topupotr2?_r=1&_t=ZS-9ASNbs39F3g" target="_blank" class="btn-social" title="TikTok">
+                <img src="https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/7277341d-cf1f-4e97-a116-e0a4f7c22dc0.png" alt="TikTok">
+            </a>
+            <a href="https://wa.me/message/YRMSABF5BREWO1" target="_blank" class="btn-social" title="WhatsApp Bisnis">
+                <img src="https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/f3669fb8-fd02-48dd-8621-2f7df416642f.jpg" alt="WA Bisnis">
+            </a>
+            <a href="#" target="_blank" class="btn-social" title="Telegram">
+                <img src="https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/6bca6164-f0cb-4f6b-b7fb-05dfbaa7f6ff.jpg" alt="Telegram">
+            </a>
+        </div>
+    </header>
+
+    <!-- SEARCH & CATEGORY FILTER -->
+    <div class="filter-wrapper">
+        <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Cari platinum, coins, ecu, truck...">
+        </div>
+        <nav class="category-nav">
+            <button class="nav-pill active" onclick="filterCategory('all', event)">🔥 Semua Paket</button>
+            <button class="nav-pill" onclick="filterCategory('platinum', event)">💎 Platinum</button>
+            <button class="nav-pill" onclick="filterCategory('coins', event)">🪙 Coins</button>
+            <button class="nav-pill" onclick="filterCategory('truck', event)">🚛 Truck & Rank</button>
+            <button class="nav-pill" onclick="filterCategory('ecu-a', event)">⚡ ECU Class A</button>
+            <button class="nav-pill" onclick="filterCategory('ecu-b', event)">⚙️ ECU Class B</button>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+
+        <!-- INFO BANNER -->
+        <div class="info-banner">
+            <div class="info-icon">🔒</div>
+            <div class="info-text">
+                <strong>Aman & Terpercaya</strong>
+                <p>Seluruh pembelian akan diproses cepat dan langsung tersimpan secara otomatis di akun <strong>Google Play Games</strong> Anda.</p>
+            </div>
+        </div>
+
+        <!-- TEMPAT PRODUK DITAMPILKAN OTOMATIS OLEH JS -->
+        <div id="app-products"></div>
+
+    </main>
+
+    <!-- FLOATING CHECKOUT BAR -->
+    <div class="checkout-bar" id="checkoutBar">
+        <div class="cart-summary">
+            <span class="total-count" id="totalItems">0 Produk Dipilih</span>
+            <span class="total-price" id="totalPrice">Rp 0</span>
+        </div>
+        <button class="btn-checkout" onclick="checkoutWA()">Checkout WhatsApp</button>
+    </div>
+
+    <footer>
+        <p>© 2026 MADEO SHOP • Fast, Safe & Reliable Services</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
