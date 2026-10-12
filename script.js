@@ -1,4 +1,4 @@
-const TAUTAN_WA_BISNIS = "https://wa.me/message/YRMSABF5BREWO1";
+const NOMOR_WA_SHOP = "6281549511644";
 
 // ==========================================
 // DATA DAFTAR PRODUK MADEO SHOP
@@ -114,7 +114,7 @@ function renderProducts() {
 
 document.addEventListener('DOMContentLoaded', renderProducts);
 
-// LOGIKA KERANJANG & KOLEKSI ACTION
+// LOGIKA KERANJANG & ACTIONS
 function addToCart(id, name, price) {
     cart[id] = { name: name, price: price, qty: 1 };
     updateUI(id);
@@ -198,18 +198,21 @@ function searchProduct() {
     });
 }
 
+// CHECKOUT DENGAN PESAN OTOMATIS DI WHATSAPP
 function checkoutWA() {
-    let message = "Halo MADEO SHOP, saya mau order:\n\n";
+    let message = "Halo MADEO SHOP, saya mau pesan item berikut:\n\n";
     let total = 0;
 
     for (let id in cart) {
         let subtotal = cart[id].price * cart[id].qty;
-        message += `• ${cart[id].name} (x${cart[id].qty}) : Rp ${subtotal.toLocaleString('id-ID')}\n`;
+        message += `• ${cart[id].name} (${cart[id].qty}x) = Rp ${subtotal.toLocaleString('id-ID')}\n`;
         total += subtotal;
     }
 
-    message += `\n*Total Bayar: Rp ${total.toLocaleString('id-ID')}*`;
-    
-    const targetUrl = `${TAUTAN_WA_BISNIS}?text=${encodeURIComponent(message)}`;
+    message += `\n------------------------------\n`;
+    message += `*Total Pembayaran: Rp ${total.toLocaleString('id-ID')}*\n\n`;
+    message += `Mohon diproses ya min, terima kasih!`;
+
+    const targetUrl = `https://api.whatsapp.com/send?phone=${NOMOR_WA_SHOP}&text=${encodeURIComponent(message)}`;
     window.open(targetUrl, '_blank');
 }
