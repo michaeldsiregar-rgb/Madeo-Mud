@@ -1,8 +1,5 @@
 const NOMOR_WA_SHOP = "6281549511644";
 
-// ==========================================
-// DATA DAFTAR PRODUK MADEO SHOP
-// ==========================================
 const categoriesData = [
     {
         id: "platinum",
@@ -33,7 +30,7 @@ const categoriesData = [
         products: [
             { id: 13, name: "ATLAS 537", price: 10000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/bf3b550a-af32-44e0-b98c-33ff564dddb3.jpg", keywords: "atlas 537 truck otr2" },
             { id: 14, name: "MAXIMUS", price: 10000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/4f176e86-1685-4204-9633-8f78571cb505.jpg", keywords: "maximus truck otr2" },
-            { id: 15, name: "MAX RANK OTR2", price: 20000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/4cacf332-b85a-44b2-a593-b560473d2c0f.jpg", tag: "Best Value", keywords: "max rank otr2" }
+            { id: 15, name: "MAX RANK OTR2", price: 20000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/812af02e-1ee9-4776-9352-71eddd828e99.jpg", tag: "Best Value", keywords: "max rank otr2" }
         ]
     },
     {
@@ -58,7 +55,6 @@ const categoriesData = [
 
 let cart = {};
 
-// RENDER PRODUK AUTOMATIS
 function renderProducts() {
     const container = document.getElementById('app-products');
     let html = '';
@@ -114,7 +110,6 @@ function renderProducts() {
 
 document.addEventListener('DOMContentLoaded', renderProducts);
 
-// LOGIKA KERANJANG & ACTIONS
 function addToCart(id, name, price) {
     cart[id] = { name: name, price: price, qty: 1 };
     updateUI(id);
@@ -198,7 +193,6 @@ function searchProduct() {
     });
 }
 
-// CHECKOUT DENGAN PESAN OTOMATIS DI WHATSAPP
 function checkoutWA() {
     let message = "Halo MADEO SHOP, saya mau pesan item berikut:\n\n";
     let total = 0;
