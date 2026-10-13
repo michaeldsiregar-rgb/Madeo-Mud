@@ -33,7 +33,7 @@ const categoriesData = [
         products: [
             { id: 13, name: "ATLAS 537", price: 10000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/bf3b550a-af32-44e0-b98c-33ff564dddb3.jpg", keywords: "atlas 537 truck otr2" },
             { id: 14, name: "MAXIMUS", price: 10000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/4f176e86-1685-4204-9633-8f78571cb505.jpg", keywords: "maximus truck otr2" },
-            { id: 15, name: "MAX RANK OTR2", price: 20000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/c79c0ed4-191e-4f52-a975-0cf1cd07696c.jpg", tag: "Best Value", keywords: "max rank otr2" }
+            { id: 15, name: "MAX RANK OTR2", price: 20000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/4cacf332-b85a-44b2-a593-b560473d2c0f.jpg", tag: "Best Value", keywords: "max rank otr2" }
         ]
     },
     {
