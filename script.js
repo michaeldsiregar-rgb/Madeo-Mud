@@ -6,10 +6,10 @@ const categoriesData = [
         title: "PLATINUM OTR2",
         icon: "💎",
         products: [
-            { id: 1, name: "2.500 Platinum OTR2", price: 10000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/685dcb9f-95e0-4b83-bcb1-f4debe719335.jpg", keywords: "2.500 2500 platinum otr2" },
-            { id: 2, name: "3.500 Platinum OTR2", price: 14000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/88bdde48-87dd-46c4-9e08-f3b47833d3ab.jpg", keywords: "3.500 3500 platinum otr2" },
-            { id: 3, name: "5.500 Platinum OTR2", price: 18000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/2cfddf12-0209-4121-987f-1fa5da10210b.jpg", keywords: "5.500 5500 platinum otr2" },
-            { id: 4, name: "8.500 Platinum OTR2", price: 24000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/90ab2932-f377-473c-86a5-4e193b7e1576.jpg", tag: "Best Value", keywords: "8.500 8500 platinum otr2" }
+            { id: 1, name: "5.000 Platinum OTR2", price: 10000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/322c8e34-9a80-45a0-89fa-9fc5d2b4fa66.jpg", keywords: "5.000 5000 platinum otr2" },
+            { id: 2, name: "10.000 Platinum OTR2", price: 18000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/8a819948-17ff-4905-bb2f-b9383e419ae4.jpg", keywords: "10.000 10000 platinum otr2" },
+            { id: 3, name: "15.000 Platinum OTR2", price: 25000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/82627be7-a3cd-409d-81fe-533bcbe2bf0f.jpg", tag: "Best Value", keywords: "15.000 15000 platinum otr2" },
+            { id: 4, name: "20.000 Platinum OTR2", price: 32000, img: "https://i.supaimg.com/81685d48-59a5-4a2d-80dd-a3252e62e807/b6613d58-1391-436f-8a6a-f7d041089917.jpg", keywords: "20.000 20000 platinum otr2" }
         ]
     },
     {
